@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 10rem;
+}
+
+.history {
+    border: solid green 3px;
+    padding: 6px;
+    margin: auto 15vw;
+    text-align: left;
+}
+
+.entry {
+    border: dashed green 3px;
+    padding: 0 3px;
+    margin: 3px;
+    display: inline-block;
+}
