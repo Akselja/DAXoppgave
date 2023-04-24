@@ -8,8 +8,17 @@ module.exports.main_get = (req, res) => {
 }
 
    // post
-module.exports.main_post = (req, res) => {
-    
+module.exports.main_post = async (req, res) => {
+    const { name } = req.body;
+
+    try {
+        const name = await db.create({ name });
+        console.log(name);
+        res.status(201).json({ name : name.name })
+    } catch (err) {
+        console.log(err);
+        res.status(400).json({ err : err });
+    }
 }
 
    // 404

@@ -1,13 +1,13 @@
 // imports
 const mongoose = require("mongoose");
 
-const schema = new mongoose.Schema({
+const nameSchema = new mongoose.Schema({
     name : {
         type : String,
         required : true,
     }
 })
 
-const db = mongoose.model("name", schema);
+const name = mongoose.model("name", nameSchema);
 
-module.exports = db;
+module.exports = name;
